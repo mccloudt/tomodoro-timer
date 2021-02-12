@@ -1,0 +1,83 @@
+$container-background: #118ab2;
+$button-hover-background: #0E7395;
+$container-font: 'Dosis', sans-serif;
+$b-shadow: 0px 0px 7px 1px rgba(0,0,0,0.6);
+
+.timer{
+    flex-basis: 29%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    font-family: $container-font;
+    box-shadow: $b-shadow;
+    margin: 2% 2%;
+    * {
+        font-family: $container-font;
+        font-size: 14pt;
+        text-align:center;
+    }
+    min-height:30%;
+    .display-false{
+        display:none;
+    }
+    .display-true{
+        display:block;
+    }
+    .title-container{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        h3{
+            width:100%;
+            flex-basis:90%;
+            color: black;
+        }
+        .editPencil{
+            margin-left: 2%;
+            font-size:8pt;
+            cursor: pointer;
+        }
+    }
+    .background-green{
+        background-color:#06D6A0;
+    }
+    .background-red{
+        background-color: #EF476F;
+    }
+    .background-yellow{
+        background-color: #FFD166;
+    }
+
+    .timer-box{
+        width:100%;
+        margin:0 auto;
+        background-color:white;
+        height:20%;
+        user-select:none;
+        .timer-controls{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:center;
+            .break-box, .work-box{
+                align-items:center;
+                display:flex;
+                flex-basis:40%;
+                justify-content:center;
+                flex-wrap: wrap;
+                .control-title{
+                    width:100%;
+                }
+                .timer-up, .timer-down{
+                    cursor:pointer;
+                }
+            }
+            .break-box *, .work-box *{
+                margin: 2% 2%;
+        }
+        }
+    }
+
+}
